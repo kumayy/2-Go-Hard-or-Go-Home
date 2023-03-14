@@ -5,7 +5,7 @@ import streamlit as st
 import pandas as pd
 
 # display data
-df = pd.read_csv("Module01/data/iris.csv")
+df = pd.read_csv("data/iris.csv")
 
 # Data display
 # st.dataframe(df,200,100)
