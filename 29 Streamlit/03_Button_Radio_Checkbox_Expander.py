@@ -27,3 +27,24 @@ if st.checkbox("Show/Hide"):
 # Working beta expander
 with st.expander("Pokémon"):
     st.info("gotta catch em all")
+
+# Select
+my_lang = ["Python","Julia","Go","Rust"]
+
+choice = st.selectbox("Language", my_lang)
+st.write("you selected {}".format(choice))
+
+# Multiple Select
+spoken_lang = {"English","French","Japan","Turkish"}
+my_spoken = st.multiselect("Spoken Language:", spoken_lang)
+my_spoken = st.multiselect("Spoken Language:", spoken_lang, default="Turkish")
+
+# Slider
+age = st.slider("Age",1,100) # numbers
+
+color = st.select_slider("Choose Color",
+     options=["yellow","red","blue","black","green"])
+
+colors = st.select_slider("Choose Color",
+     options=["yellow","red","blue","black","green"],
+     value=("yellow","blue"))
