@@ -1,1 +1,0 @@
-C:\Users\mbatu\Desktop\Kumay\01 Pokémon Training\Streamlit
